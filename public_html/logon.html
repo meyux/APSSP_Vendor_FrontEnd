@@ -5,27 +5,178 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+    <title>PILMICO | AP Shared Services Portal</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <link rel="icon" href="img/favicon.ico" type="image/png">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/animate.css" rel="stylesheet" type="text/css">
+
+    <!-- FancyBox -->
+    <link href="css/fancybox/jquery.fancybox.css" rel="stylesheet">
+
+    <!-- Font Icons -->
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="css/fonts.css" rel="stylesheet">
+
+    <!-- Form Objects CSS -->
+    <link href="css/formobjs.css" rel="stylesheet">
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/jquery.fancybox.pack.js"></script>
+    <!-- Fancybox -->
+    <script src="js/jquery.fancybox-media.js"></script>
+    <!-- Fancybox for Media -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            /*
+             *   Examples - images
+             */
+            $("a.fancythis").fancybox({
+                'overlayShow': true,
+                'transitionIn': 'elastic',
+                'transitionOut': 'elastic',
+                'overlayColor': '#000',
+                'overlayOpacity': 0.5
+            });
+
+            $("a.errorbox").fancybox({
+                'overlayShow': true,
+                'transitionIn': 'elastic',
+                'transitionOut': 'elastic',
+                'overlayColor': '#000',
+                'overlayOpacity': 0.5
+            });
+
+            /* The following is used for grouped images if you like */
+            $("a[rel=group1]").fancybox({
+                'transitionIn': 'elastic',
+                'transitionOut': 'elastic',
+                'titlePosition': 'outside',
+                'titleFormat': function(title, currentArray, currentIndex, currentOpts) {
+                    return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
+                }
+            });
+
+            $("a[rel=group2]").fancybox({
+                'transitionIn': 'elastic',
+                'transitionOut': 'elastic',
+                'titlePosition': 'outside',
+                'titleFormat': function(title, currentArray, currentIndex, currentOpts) {
+                    return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
+                }
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+        <!-- Use this to push the small footer wit hthe class .staydown to bottom. should not appear on homepage-->
+
+        function footerAlign() {
+            $('.staydown').css('display', 'block');
+
+            $('.staydown').css('height', 'auto');
+
+            var footerHeight = $('footer').outerHeight();
+
+            $('body').css('padding-bottom', footerHeight);
+
+            $('.staydown').css('height', footerHeight);
+        }
+
+        $(document).ready(function() {
+            footerAlign();
+        });
+
+        $(window).resize(function() {
+            footerAlign();
+        });
+    </script>
+
+
 </head>
 
 <body>
-    <h1>Hello, world!</h1>
+    <a href="#top" class="cd-top">Top</a>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    <div id="top"></div>
+
+    <header id="header_wrapper">
+        <div class="container">
+            <div class="header_box">
+                <div class="logo">
+                    <a href="#"><img src="img/logo.png" alt="logo" width="117" height="39"></a>
+                </div>
+                <nav class="navbar navbar-inverse" role="navigation">
+                    <div class="navbar-header">
+                        <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav"> <span class="sr-only">Toggle navigation</span> 	<span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                    </div>
+                    <div id="main-nav" class="collapse navbar-collapse navStyle">
+                        <ul class="nav navbar-nav" id="mainNav">
+                            <!--<li><a href="#xlog" class="fancythis">Log-in</a></li> -->
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!--Header_section-->
+
+    <!-- Section-->
+    <section id="usermgtboard" class="margtop100">
+        <h2 class="longshdwbtmrt"><span class="fa fa-gear"></span> AP Shared Services Portal</h2>
+        <h3 class="center longshdwbtmrt">Vendor Billing Submission</h3>
+        <div class="service_wrapper">
+            <div class="row">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4 wow fadeInLeft margbtm50 delay-06s">
+                    <center>
+                        <div class="form">
+                            <form name="Login" id="Login" novalidate>
+                                <div class="control-group">
+                                    <div class="controls">
+                                        <input type="text" class="form-control input-text black" placeholder="Username" id="usrname" required data-validation-required-message="Please Enter a Username" />
+                                        <p class="help-block"></p>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <div class="controls"></div>
+                                </div>
+                                <div class="control-group">
+                                    <div class="controls">
+                                        <input type="password" class="form-control input-text black" placeholder="Password" id="pword" required data-validation-required-message="Please enter a matching password" />
+                                    </div>
+                                </div>
+                                <div id="success"> </div>
+                                <!-- For success/fail messages -->
+                                <a type="submit" class="btn btn-primary input-btn pull-right" onClick="window.location.href='vbsubmit.html'">Login</a><br />
+                            </form>
+                        </div>
+                    </center>
+                </div>
+            </div>
+        </div>
+        <!-- EOF Container -->
+    </section>
+    <!-- Section-->
+
+
+    <!--Footer-->
+    <footer class="staydown footer_wrapper">
+        <div class="container">
+            <div class="footer_bottom"><span class="white">Copyright © 2016, <a href="#" class="white">www.pilmico.com/apssp</a>.</span></div>
+        </div>
+    </footer>
+
+
+
+
 </body>
 
 </html>
