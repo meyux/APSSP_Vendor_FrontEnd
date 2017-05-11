@@ -117,279 +117,254 @@
         <h3><span class="fa fa-upload"></span> Vendor Billing Submission</h3>
     </div>
     <hr>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-xs-12 col-sm-6 col-md-8">
-                <div class="center margbtm20 tableTopper">
-                    <span class="tall42">VENDOR:</span>
-                    <div class="btn-group ">
-                        <a class="btn btn-primary" href="#"><i class="fa fa-user fa-fw"></i> Vendor ID</a>
+    <form class="form-inline">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-8">
+                    <div class="form-group">
+                        <label class="btn btn-primary" for="vendorId">Vendor:</label>
+                        <input type="text" class="form-control" id="vendorId" placeholder="Vendor ID" disabled>
+                        <input type="text" class="form-control" id="vendorName" placeholder="Vendor Name" disabled>
                     </div>
-                    <button type="button" class="btn btn-primary">Vendor Name</button>
                 </div>
-            </div>
-            <div class="col-xs-6 col-md-4">
-                <div class="center margbtm20">
-                    <span class="tall42">REFERENCE ID</span>
-                    <a class="btn btn-primary" size="8">123456</a>
+                <div class="col-xs-6 col-md-4">
+                    <label class="btn btn-primary" for="referenceId">Reference ID:</label>
+                    <input type="text" class="form-control" id="referenceId" placeholder="mmddyyy-00001" disabled>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12 col-sm-6 col-md-6">
-                <div class="col-sm-6">
-                    <div class="center margbtm20">
-                        <p class="pull-right tall42">Submit Doduments for</p>
-                    </div>
-                </div>
-
-                <div class="col-sm-6">
-                    <div class="center margbtm20">
-                        <div class="input-group">
-                            <span class="input-group-addon btn-dark-blue btn btn-primary" id="basic-addon3">Invoice No.</span>
-                            <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
-                        </div>
-                    </div>
+        <br/>
+        <div class="container">
+            <div class="form-group">
+                <div data-demo-html="true">
+                    <span class="text-primary"><strong>SUBMIT</strong> Doduments for : </span>
+                    <label class="btn btn-primary" for="invoiceNo">Invoice No.</label>
+                    <input type="text" class="form-control" id="invoiceNo">
+                    <label class="btn btn-primary" for="invoiceDate">Date</label>
+                    <input type="text" class="form-control" id="invoiceDate" data-role="date" data-inline="true">
                 </div>
             </div>
-            <div class="col-xs-6 col-sm-6 col-md-6">
-                <div class="col-sm-6">
-                    <div class="margbtm20">
+        </div>
+        <div class="container">
+            <table border="0" align="center" cellpadding="0" cellspacing="0">
+                <tr class="noBG">
+                    <td width="3%" height="43" valign="middle" class="noBG">1</td>
+                    <td width="29%" class="noBG">
+                        <a class="btn btn-primary pull-left fullwidth">INVOICE</a>
+                    </td>
+                    <td width="10%" class="noBG">&nbsp;</td>
+                    <td width="16%" valign="middle" class="noBG">
                         <div class="input-group pull-left">
-                            <span class="input-group-addon btn-dark-blue btn btn-primary" id="basic-addon3">Date</span>
+                            <span class="input-group-addon btn-dark-blue btn btn-primary" id="basic-addon3">PAGE</span>
                             <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
                         </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6">
-                    <div class="center margbtm20">
-                        <a class="btn btn-primary pull-left" size="8">NEW INVOICE</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <table border="0" align="center" cellpadding="0" cellspacing="0">
-            <tr class="noBG">
-                <td width="3%" height="43" valign="middle" class="noBG">1</td>
-                <td width="29%" class="noBG">
-                    <a class="btn btn-primary pull-left fullwidth">INVOICE</a>
-                </td>
-                <td width="10%" class="noBG">&nbsp;</td>
-                <td width="16%" valign="middle" class="noBG">
-                    <div class="input-group pull-left">
-                        <span class="input-group-addon btn-dark-blue btn btn-primary" id="basic-addon3">PAGE</span>
-                        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
-                    </div>
-                </td>
-                <td width="14%" class="noBG">&nbsp;</td>
-                <td width="14%" class="noBG">
-                    <input class="btn btn-primary pull-left" type="file">
-                </td>
-                <td width="14%" class="noBG">
-                    <a class="btn btn-primary pull-left" size="8" onClick="window.location.href='photo.html'">TAKE PHOTO</a>
-                </td>
-            </tr>
-
-            <tr class="noBG">
-                <td width="3%" height="43" valign="middle" class="noBG">2</td>
-                <td width="29%" class="noBG">
-                    <a class="btn btn-primary pull-left fullwidth">DELIVERY RECEIPT</a>
-                </td>
-                <td width="10%" class="noBG">
-                    <div class="input-group pull-left">
-                        <span class="input-group-addon btn-dark-blue btn btn-primary" id="basic-addon3">No.</span>
-                        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
-                    </div>
-                </td>
-                <td width="16%" valign="middle" class="noBG">
-                    <div class="input-group pull-left">
-                        <span class="input-group-addon btn-dark-blue btn btn-primary" id="basic-addon3">PAGE</span>
-                        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
-                    </div>
-                </td>
-                <td width="14%" class="noBG">
-                    <div class="input-group pull-left">
-                        <span class="input-group-addon btn-dark-blue btn btn-primary" id="basic-addon3">DATE</span>
-                        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
-                    </div>
-                </td>
-                <td width="14%" class="noBG">
-                    <input class="btn btn-primary pull-left" type="file">
-                </td>
-                <td width="14%" class="noBG">
-                    <a class="btn btn-primary pull-left" size="8" onClick="window.location.href='photo.html'">TAKE PHOTO</a>
-                </td>
-            </tr>
-
-            <tr class="noBG">
-                <td width="3%" height="43" valign="middle" class="noBG">3</td>
-                <td width="29%" class="noBG">
-                    <a class="btn btn-primary pull-left fullwidth">STATEMENT OF ACCOUNT</a>
-                </td>
-                <td width="10%" class="noBG">
-                    <div class="input-group pull-left">
-                        <span class="input-group-addon btn-dark-blue btn btn-primary" id="basic-addon3">No.</span>
-                        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
-                    </div>
-                </td>
-                <td width="16%" valign="middle" class="noBG">
-                    <div class="input-group pull-left">
-                        <span class="input-group-addon btn-dark-blue btn btn-primary" id="basic-addon3">PAGE</span>
-                        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
-                    </div>
-                </td>
-                <td width="14%" class="noBG">
-                    <div class="input-group pull-left">
-                        <span class="input-group-addon btn-dark-blue btn btn-primary" id="basic-addon3">DATE</span>
-                        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
-                    </div>
-                </td>
-                <td width="14%" class="noBG"><input class="btn btn-primary pull-left" type="file"></td>
-                <td width="14%" class="noBG"><a class="btn btn-primary pull-left" size="8" onClick="window.location.href='photo.html'">TAKE PHOTO</a></td>
-            </tr>
-
-            <tr class="noBG">
-                <td width="3%" height="43" valign="middle" class="noBG">4</td>
-                <td width="29%" class="noBG">
-                    <a class="btn btn-primary pull-left fullwidth">BILLING STATEMENT</a>
-                </td>
-                <td width="10%" class="noBG">
-                    <div class="input-group pull-left">
-                        <span class="input-group-addon btn-dark-blue btn btn-primary" id="basic-addon3">No.</span>
-                        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
-                    </div>
-                </td>
-                <td width="16%" valign="middle" class="noBG">
-                    <div class="input-group pull-left">
-                        <span class="input-group-addon btn-dark-blue btn btn-primary" id="basic-addon3">PAGE</span>
-                        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
-                    </div>
-                </td>
-                <td width="14%" class="noBG">
-                    <div class="input-group pull-left">
-                        <span class="input-group-addon btn-dark-blue btn btn-primary" id="basic-addon3">DATE</span>
-                        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
-                    </div>
-                </td>
-                <td width="14%" class="noBG"><input class="btn btn-primary pull-left" type="file"></td>
-                <td width="14%" class="noBG"><a class="btn btn-primary pull-left" size="8" onClick="window.location.href='photo.html'">TAKE PHOTO</a></td>
-            </tr>
-
-            <tr class="noBG">
-                <td width="3%" height="43" valign="middle" class="noBG">5</td>
-                <td width="29%" class="noBG">
-                    <a class="btn btn-primary pull-left fullwidth">OTHERS</a>
-                </td>
-                <td width="10%" class="noBG">
-                    <div class="input-group pull-left">
-                        <span class="input-group-addon btn-dark-blue btn btn-primary" id="basic-addon3">No.</span>
-                        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
-                    </div>
-                </td>
-                <td width="16%" valign="middle" class="noBG">
-                    <div class="input-group pull-left">
-                        <span class="input-group-addon btn-dark-blue btn btn-primary" id="basic-addon3">PAGE</span>
-                        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
-                    </div>
-                </td>
-                <td width="14%" class="noBG">
-                    <div class="input-group pull-left">
-                        <span class="input-group-addon btn-dark-blue btn btn-primary" id="basic-addon3">DATE</span>
-                        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
-                    </div>
-                </td>
-                <td width="14%" class="noBG"><input class="btn btn-primary pull-left" type="file"></td>
-                <td width="14%" class="noBG"><a class="btn btn-primary pull-left" size="8" onClick="window.location.href='photo.html'">TAKE PHOTO</a></td>
-            </tr>
-        </table>
-    </div>
-    <div class="container-fluid">
-        <div class="row margtop20">
-            <div class="col-lg-6">
-                <h3>Documents Submitted</h3>
-            </div>
-            <div class="col-lg-6">
-                <p class="pull-right"><a href="">VIEW BILLING STATUS</a></p>
-            </div>
-            <table align="center">
-                <tr>
-                    <th width="4%" valign="middle">#</th>
-                    <th width="15%" valign="middle">Document Type</th>
-                    <th width="10%" valign="middle">No,</th>
-                    <th width="9%" valign="middle">Page No.</th>
-                    <th width="9%" valign="middle">Date</th>
-                    <th width="15%" valign="middle">Filename</th>
-                    <th width="9%" valign="middle">Doc RefID</th>
-                    <th width="9%" valign="middle">Upload By</th>
-                    <th width="10%" valign="middle">Upload Date</th>
-                    <th width="10%" valign="middle"></th>
+                    </td>
+                    <td width="14%" class="noBG">&nbsp;</td>
+                    <td width="14%" class="noBG">
+                        <input class="btn btn-primary pull-left" type="file">
+                    </td>
+                    <td width="14%" class="noBG">
+                        <a class="btn btn-primary pull-left" size="8" onClick="window.location.href='photo.html'">TAKE PHOTO</a>
+                    </td>
                 </tr>
-                <tr>
-                    <td valign="middle">&nbsp;</td>
-                    <td valign="middle">&nbsp;</td>
-                    <td valign="middle">&nbsp;</td>
-                    <td valign="middle">&nbsp;</td>
-                    <td valign="middle">&nbsp;</td>
-                    <td valign="middle">&nbsp;</td>
-                    <td valign="middle">&nbsp;</td>
-                    <td valign="middle">&nbsp;</td>
-                    <td valign="middle">&nbsp;</td>
-                    <td valign="middle"><button type="button" class="btn btn-sm btn-primary">Delete</button></td>
+
+                <tr class="noBG">
+                    <td width="3%" height="43" valign="middle" class="noBG">2</td>
+                    <td width="29%" class="noBG">
+                        <a class="btn btn-primary pull-left fullwidth">DELIVERY RECEIPT</a>
+                    </td>
+                    <td width="10%" class="noBG">
+                        <div class="input-group pull-left">
+                            <span class="input-group-addon btn-dark-blue btn btn-primary" id="basic-addon3">No.</span>
+                            <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                        </div>
+                    </td>
+                    <td width="16%" valign="middle" class="noBG">
+                        <div class="input-group pull-left">
+                            <span class="input-group-addon btn-dark-blue btn btn-primary" id="basic-addon3">PAGE</span>
+                            <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                        </div>
+                    </td>
+                    <td width="14%" class="noBG">
+                        <div class="input-group pull-left">
+                            <span class="input-group-addon btn-dark-blue btn btn-primary" id="basic-addon3">DATE</span>
+                            <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                        </div>
+                    </td>
+                    <td width="14%" class="noBG">
+                        <input class="btn btn-primary pull-left" type="file">
+                    </td>
+                    <td width="14%" class="noBG">
+                        <a class="btn btn-primary pull-left" size="8" onClick="window.location.href='photo.html'">TAKE PHOTO</a>
+                    </td>
                 </tr>
-                <tr>
-                    <td valign="middle">&nbsp;</td>
-                    <td valign="middle">&nbsp;</td>
-                    <td valign="middle">&nbsp;</td>
-                    <td valign="middle">&nbsp;</td>
-                    <td valign="middle">&nbsp;</td>
-                    <td valign="middle">&nbsp;</td>
-                    <td valign="middle">&nbsp;</td>
-                    <td valign="middle">&nbsp;</td>
-                    <td valign="middle">&nbsp;</td>
-                    <td valign="middle"><button type="button" class="btn btn-sm btn-primary">Delete</button></td>
+
+                <tr class="noBG">
+                    <td width="3%" height="43" valign="middle" class="noBG">3</td>
+                    <td width="29%" class="noBG">
+                        <a class="btn btn-primary pull-left fullwidth">STATEMENT OF ACCOUNT</a>
+                    </td>
+                    <td width="10%" class="noBG">
+                        <div class="input-group pull-left">
+                            <span class="input-group-addon btn-dark-blue btn btn-primary" id="basic-addon3">No.</span>
+                            <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                        </div>
+                    </td>
+                    <td width="16%" valign="middle" class="noBG">
+                        <div class="input-group pull-left">
+                            <span class="input-group-addon btn-dark-blue btn btn-primary" id="basic-addon3">PAGE</span>
+                            <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                        </div>
+                    </td>
+                    <td width="14%" class="noBG">
+                        <div class="input-group pull-left">
+                            <span class="input-group-addon btn-dark-blue btn btn-primary" id="basic-addon3">DATE</span>
+                            <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                        </div>
+                    </td>
+                    <td width="14%" class="noBG"><input class="btn btn-primary pull-left" type="file"></td>
+                    <td width="14%" class="noBG"><a class="btn btn-primary pull-left" size="8" onClick="window.location.href='photo.html'">TAKE PHOTO</a></td>
                 </tr>
-                <tr>
-                    <td valign="middle">&nbsp;</td>
-                    <td valign="middle">&nbsp;</td>
-                    <td valign="middle">&nbsp;</td>
-                    <td valign="middle">&nbsp;</td>
-                    <td valign="middle">&nbsp;</td>
-                    <td valign="middle">&nbsp;</td>
-                    <td valign="middle">&nbsp;</td>
-                    <td valign="middle">&nbsp;</td>
-                    <td valign="middle">&nbsp;</td>
-                    <td valign="middle"><button type="button" class="btn btn-sm btn-primary">Delete</button></td>
+
+                <tr class="noBG">
+                    <td width="3%" height="43" valign="middle" class="noBG">4</td>
+                    <td width="29%" class="noBG">
+                        <a class="btn btn-primary pull-left fullwidth">BILLING STATEMENT</a>
+                    </td>
+                    <td width="10%" class="noBG">
+                        <div class="input-group pull-left">
+                            <span class="input-group-addon btn-dark-blue btn btn-primary" id="basic-addon3">No.</span>
+                            <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                        </div>
+                    </td>
+                    <td width="16%" valign="middle" class="noBG">
+                        <div class="input-group pull-left">
+                            <span class="input-group-addon btn-dark-blue btn btn-primary" id="basic-addon3">PAGE</span>
+                            <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                        </div>
+                    </td>
+                    <td width="14%" class="noBG">
+                        <div class="input-group pull-left">
+                            <span class="input-group-addon btn-dark-blue btn btn-primary" id="basic-addon3">DATE</span>
+                            <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                        </div>
+                    </td>
+                    <td width="14%" class="noBG"><input class="btn btn-primary pull-left" type="file"></td>
+                    <td width="14%" class="noBG"><a class="btn btn-primary pull-left" size="8" onClick="window.location.href='photo.html'">TAKE PHOTO</a></td>
                 </tr>
-                <tr>
-                    <td valign="middle">&nbsp;</td>
-                    <td valign="middle">&nbsp;</td>
-                    <td valign="middle">&nbsp;</td>
-                    <td valign="middle">&nbsp;</td>
-                    <td valign="middle">&nbsp;</td>
-                    <td valign="middle">&nbsp;</td>
-                    <td valign="middle">&nbsp;</td>
-                    <td valign="middle">&nbsp;</td>
-                    <td valign="middle">&nbsp;</td>
-                    <td valign="middle"><button type="button" class="btn btn-sm btn-primary">Delete</button></td>
+
+                <tr class="noBG">
+                    <td width="3%" height="43" valign="middle" class="noBG">5</td>
+                    <td width="29%" class="noBG">
+                        <a class="btn btn-primary pull-left fullwidth">OTHERS</a>
+                    </td>
+                    <td width="10%" class="noBG">
+                        <div class="input-group pull-left">
+                            <span class="input-group-addon btn-dark-blue btn btn-primary" id="basic-addon3">No.</span>
+                            <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                        </div>
+                    </td>
+                    <td width="16%" valign="middle" class="noBG">
+                        <div class="input-group pull-left">
+                            <span class="input-group-addon btn-dark-blue btn btn-primary" id="basic-addon3">PAGE</span>
+                            <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                        </div>
+                    </td>
+                    <td width="14%" class="noBG">
+                        <div class="input-group pull-left">
+                            <span class="input-group-addon btn-dark-blue btn btn-primary" id="basic-addon3">DATE</span>
+                            <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                        </div>
+                    </td>
+                    <td width="14%" class="noBG"><input class="btn btn-primary pull-left" type="file"></td>
+                    <td width="14%" class="noBG"><a class="btn btn-primary pull-left" size="8" onClick="window.location.href='photo.html'">TAKE PHOTO</a></td>
                 </tr>
             </table>
         </div>
-        <!-- EOF row -->
-
-        <div class="row margtop20">
-            <div class="col-sm-6">
-
+        <div class="container-fluid">
+            <div class="row margtop20">
+                <div class="col-lg-6">
+                    <h3>Documents Submitted</h3>
+                </div>
+                <div class="col-lg-6">
+                    <p class="pull-right"><a href="">VIEW BILLING STATUS</a></p>
+                </div>
+                <table align="center">
+                    <tr>
+                        <th width="4%" valign="middle">#</th>
+                        <th width="15%" valign="middle">Document Type</th>
+                        <th width="10%" valign="middle">No,</th>
+                        <th width="9%" valign="middle">Page No.</th>
+                        <th width="9%" valign="middle">Date</th>
+                        <th width="15%" valign="middle">Filename</th>
+                        <th width="9%" valign="middle">Doc RefID</th>
+                        <th width="9%" valign="middle">Upload By</th>
+                        <th width="10%" valign="middle">Upload Date</th>
+                        <th width="10%" valign="middle"></th>
+                    </tr>
+                    <tr>
+                        <td valign="middle">&nbsp;</td>
+                        <td valign="middle">&nbsp;</td>
+                        <td valign="middle">&nbsp;</td>
+                        <td valign="middle">&nbsp;</td>
+                        <td valign="middle">&nbsp;</td>
+                        <td valign="middle">&nbsp;</td>
+                        <td valign="middle">&nbsp;</td>
+                        <td valign="middle">&nbsp;</td>
+                        <td valign="middle">&nbsp;</td>
+                        <td valign="middle"><button type="button" class="btn btn-sm btn-primary">Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td valign="middle">&nbsp;</td>
+                        <td valign="middle">&nbsp;</td>
+                        <td valign="middle">&nbsp;</td>
+                        <td valign="middle">&nbsp;</td>
+                        <td valign="middle">&nbsp;</td>
+                        <td valign="middle">&nbsp;</td>
+                        <td valign="middle">&nbsp;</td>
+                        <td valign="middle">&nbsp;</td>
+                        <td valign="middle">&nbsp;</td>
+                        <td valign="middle"><button type="button" class="btn btn-sm btn-primary">Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td valign="middle">&nbsp;</td>
+                        <td valign="middle">&nbsp;</td>
+                        <td valign="middle">&nbsp;</td>
+                        <td valign="middle">&nbsp;</td>
+                        <td valign="middle">&nbsp;</td>
+                        <td valign="middle">&nbsp;</td>
+                        <td valign="middle">&nbsp;</td>
+                        <td valign="middle">&nbsp;</td>
+                        <td valign="middle">&nbsp;</td>
+                        <td valign="middle"><button type="button" class="btn btn-sm btn-primary">Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td valign="middle">&nbsp;</td>
+                        <td valign="middle">&nbsp;</td>
+                        <td valign="middle">&nbsp;</td>
+                        <td valign="middle">&nbsp;</td>
+                        <td valign="middle">&nbsp;</td>
+                        <td valign="middle">&nbsp;</td>
+                        <td valign="middle">&nbsp;</td>
+                        <td valign="middle">&nbsp;</td>
+                        <td valign="middle">&nbsp;</td>
+                        <td valign="middle"><button type="button" class="btn btn-sm btn-primary">Delete</button></td>
+                    </tr>
+                </table>
             </div>
-            <div class="col-sm-6">
-                <a class="btn btn-primary pull-right" href="#"><i class="fa fa-thumbs-up"></i> Submit</a>
+            <!-- EOF row -->
+
+            <div class="row margtop20">
+                <div class="col-sm-6">
+
+                </div>
+                <div class="col-sm-6">
+                    <a class="btn btn-primary pull-right" href="#"><i class="fa fa-thumbs-up"></i> Submit</a>
+                </div>
             </div>
         </div>
-    </div>
+    </form>
+
 
     <!--Footer-->
     <footer class="staydown footer_wrapper">
